@@ -47,6 +47,9 @@ router.get("/logout", function(req, res){
     res.redirect("/campgrounds");
 });
 
+var test = 1;
+// Added a comment to my auth route
+
 
 
 module.exports = router;
