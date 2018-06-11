@@ -24,7 +24,7 @@ app.use(require("express-session")({
 app.use(methodOverride("_method"));   
 app.use(flash());    
 app.set("view engine", "ejs");
-app.use(express.static(__dirname+"/public"));  // this needs to be before bodyParser i think
+app.use(express.static(__dirname+"/public"));  
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(function(req, res, next){
