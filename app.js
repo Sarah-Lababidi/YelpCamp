@@ -15,7 +15,8 @@ var campgroundRoute = require("./routes/campground"),
     authRoute       = require("./routes/auth");
 
 
-mongoose.connect("mongodb://localhost/yelp_camp"); 
+// mongoose.connect("mongodb://localhost/yelp_camp"); 
+ mongoose.connect("mongodb://sarah:s.123456@ds255740.mlab.com:55740/yelpcamp-sarah"); 
 app.use(require("express-session")({
     secret: "Rusty is the best",
     resave: false,
